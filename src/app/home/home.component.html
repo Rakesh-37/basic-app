@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            
+            width: 1400px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        div{
+            width: 1200px;
+            height: 420px;
+            display: flex;
+            justify-content:space-between;
+            overflow-x: auto;
+           }
+        img{
+            min-width: 400px;
+            height: 330px;
+            position: relative;
+            text-align: center;
+           
+            justify-content: space-evenly;   
+        }  
+        .arrowLeft,.arrowRight{
+            width: 50px;
+            position: absolute;
+           background: rgba(236, 235, 235, 0);
+            left: 0;
+            z-index: 1;
+            transition: 0.5s;
+            height: 50px;
+            top: 30%;
+        }
+        .arrowRight{
+            left: auto;
+            right: 0;   
+        }
+        .arrowLeft{
+            left: 0;
+            right: auto;
+        }
+        .arrowLeft:hover,.arrowRight:hover{
+            background: rgb(214, 210, 210);
+            cursor: pointer;
+        }
+        .arrow{
+            display: inline-block;
+            border: 3px solid rgb(167, 14, 14);
+            width: 20px;
+            height: 20px;
+            border-left: none;
+            border-bottom: none;
+            margin: auto;
+            position: absolute;
+            
+        }
+        .arrowLeft{
+            transform: rotateZ(-135deg);
+        }
+        .arrowRight{
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;color: rgb(180, 209, 17);text-shadow: springgreen;">WEB ACADEMY</h1>
+    <main>   
+    <div class="carousel">
+        <div class="leftArrow"><span class="arrow arrowLeft"></span>
+            <div class="rightArrow"><span class="arrow arrowRight"></span>
+        <img src="https://3.bp.blogspot.com/-7x5c_f1yzsQ/XHv9FZKHrEI/AAAAAAAADrE/4iGl9Lm6K2odX4SdWbU_RN6gZesx4IaGACEwYBhgL/s1600/html.jpg" alt="">
+        <img src="https://i1.wp.com/www.whileifblog.com/wp-content/uploads/2020/04/o-que-e-o-css3.jpg?fit=1280%2C720&ssl=1" alt="">
+        <img src="https://www.seedect.com/assets/img/portfolio/Bootstrap.jpg" alt="">
+        <img src="https://4.bp.blogspot.com/-s2EhTt57oeU/XHtQtO1QNLI/AAAAAAAANW8/KYkPQEZUyocSpA2RzqCcVt31imXPi63RACLcBGAs/s1600/Free%2BCourses%2Bto%2Blearn%2BJavaScript.jpg" alt="">
+        <img src="https://www.positronx.io/wp-content/uploads/2018/11/positronx-banner-1152-1.jpg" alt="">
+        <img src="https://miro.medium.com/max/2560/1*jAwFJjRn0DYRA3fnxrR9PQ.jpeg" alt="">
+    </div>
+</div>
+</div>
+</main>
+<hr><hr>
+<h2 style="text-align: center;color:  rgb(180, 209, 17);">COURSES OFFERED HERE</h2>
+
+<hr><hr>
+<h2 style="text-align: center;color:rgb(180, 209, 17) ;">POPULAR PAGES</h2>
+<nav style="text-align: center;">
+<table style="margin-left: 330px;"> 
+<tr>       
+    <td><button style="width: 100%;background-color: aquamarine;"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">PROFILES</a></button></td>
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">ACADEMIC CALENDER</a></button></td>
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">EXAMINATIONS</a></button></td>
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">HOSTEL & DINING</a></button></td>
+</tr>
+<tr>    
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">PLACEMENTS</a></button></td>
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">ADMISSIONS</a></button></td>
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">FEE STRUCTURE</a></button></td>
+    <td><button style="width: 100%;background-color: aquamarine"><a style="color: rgb(211, 69, 26);text-decoration: none;" href="#">ACADEMIC MATERIALS</a></button></td>
+</tr>    
+</table>    
+</nav>
+<hr><hr>
+<nav class="card" style="margin-bottom: 100px;text-align: center;color: cadetblue;">
+     <p style="text-align: center;color: rgb(224, 24, 24);">FOR MORE DETAILS CONTACT US</p>
+     <h4>WEB ACADEMY</h4>
+     <h5>Hyderbad</h5>
+     <h5>Hyderbad,India</h5>
+     <h5>phone no:- 701xxxx031</h5>
+     <h5>email:-xxx@gmail.com</h5>
+     <h5>follow us on <a style="text-decoration: none;color: rgb(240, 21, 50);" href="#">instagram</a></h5>
+</nav>
+</body>
+</html>
